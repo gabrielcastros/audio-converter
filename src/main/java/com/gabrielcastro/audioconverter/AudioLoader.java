@@ -10,8 +10,6 @@ import java.io.IOException;
 
 public class AudioLoader {
 
-    Encoder encoder = new Encoder();
-
     public void convertToMp3(String path) throws UnsupportedAudioFileException, IOException {
         File sourceFile = new File(path);
         String newPath = path.replace(sourceFile.getName(), sourceFile.getName().replace(".wav", ".mp3"));
